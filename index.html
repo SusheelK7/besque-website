@@ -5,36 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Document</title>
 </head>
 <body>
 
-    <!-- Top strip -->
-    <div class="top-strip text-center py-1">
-        <small>380,000+ Happy Customers Worldwide</small>
-    </div>
+  <!-- Top strip -->
+  <div class="top-strip text-center py-1">
+      <small>380,000+ Happy Customers Worldwide</small>
+  </div>
 
     <!-- NAVBAR -->
-    <header class="newnavbar">
+  <header class="newnavbar">
   <nav class="nav-left">
     <a href="index.html">HOME</a>
-    <a href="shop.html">SHOP</a>
+      <div class="dropdown">
+          <a href="shop.html" class="dropbtn">SHOP</a>
+          <div class="dropdown-menu">
+            <a href="#">Hair</a>
+            <a href="#">Skin</a>
+            <a href="#">Shower</a>
+            <a href="#">Starter Kits</a>
+          </div>
+      </div>
     <a href="learn.html">LEARN</a>
     <a href="aboutus.html">ABOUT</a>
-    <a href="#">CONTACT</a>
-    <a href="#">TRACK YOUR ORDER</a>
+    <a href="contactus.html">CONTACT</a>
+    <a href="trackorder.html">TRACK YOUR ORDER</a>
   </nav>
 
   <div class="nav-center">
     <img src="images/logogolden.webp" alt="Logo">
   </div>
 
-  <div class="nav-right">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-regular fa-user"></i>
-    <i class="fa-solid fa-bag-shopping"></i>
+  <div class="nav-right d-flex gap-4">
+    <img src="images/search-interface-symbol.png" alt="" width="20px" height="20px">
+    <img src="images/user.png" alt="" width="20px" height="20px">
+    <img src="images/shopping-bag.png" alt="" width="20px" height="20px">
   </div>
 </header>
 

@@ -67,6 +67,54 @@ header.navbar:hover::before {
     cursor: pointer;
 }
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu box */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 20;
+}
+
+/* Dropdown menu links */
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  display: block;
+  transition: 0.3s ease;
+  margin: 0;
+}
+
+.dropdown-menu a:hover {
+  background: #f5f5f5;
+  color: #d3a257; /* gold color */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Make SHOP look active when opened */
+.dropdown:hover > .dropbtn {
+  color: #d3a257;
+}
+
+
 /* HERO */
 .hero {
     display: flex;

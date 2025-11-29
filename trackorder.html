@@ -6,32 +6,32 @@
   <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/trackorder.css">
   <title>Document</title>
 </head>
 <body>
-  <!-- Top strip -->
-  <div class="top-strip text-center py-1">
-      <small>380,000+ Happy Customers Worldwide</small>
-  </div>
+  <!-- TOP BLACK BAR -->
+<div class="top-bar">
+    Free Worldwide Shipping
+</div>
 
   <!-- NAVBAR -->
 <header class="navbar">
   <nav class="nav-left">
     <a href="index.html">HOME</a>
-<div class="dropdown">
+  <div class="dropdown">
     <a href="shop.html" class="dropbtn">SHOP</a>
-  <div class="dropdown-menu">
+    <div class="dropdown-menu">
       <a href="#">Hair</a>
       <a href="#">Skin</a>
       <a href="#">Shower</a>
       <a href="#">Starter Kits</a>
+    </div>
   </div>
-</div>
     <a href="learn.html">LEARN</a>
     <a href="aboutus.html">ABOUT</a>
     <a href="contactus.html">CONTACT</a>
-    <a href="#">TRACK YOUR ORDER</a>
+    <a href="trackorder.html">TRACK YOUR ORDER</a>
   </nav>
 
   <div class="nav-center">
@@ -45,45 +45,47 @@
   </div>
 </header>
 
-<div class="main-div container-fluid p-0">
-<div class="hero-section bg-black text-white">
-  <div class="hero-left">
-    <h5>WE ❤ OUR CUSTOMERS</h5>
-    <h1>About us? Here it's all about you.</h1>
-    <p >Besque was founded to bring ancient, pure, natural, age-old remedies passed down through Eastern heritage. We love nature and everything natural, we are advocates of organic and pure living. The beauty industry is full of harsh chemicals and hormone-disrupting ingredients.</p>
-  </div>
-  <div class="hero-right">
-    <img src="images/hero-image.png" alt="About Us Cover Image">
+<div class="main-div container">
+  <h1>Track Your Order</h1>
+  <p>We're just as excited as you are! You can track your parcel of pure, unadulterated natural goodness below 💕</p>
+  <div class="tracking-container">
+  <div class="tracking-grid">
+
+    <!-- Left Form -->
+    <form class="tracking-form">
+      <div class="form-group">
+        <label for="orderNumber">Order Number</label>
+        <input type="text" id="orderNumber" placeholder="Enter order number" />
+      </div>
+
+      <div class="form-group">
+        <label for="emailOrPhone">Email or Phone Number</label>
+        <div class="input-wrapper">
+          <input type="text" id="emailOrPhone" placeholder="Enter email or phone" />
+          <button type="button" class="icon-btn">
+            
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-black">TRACK</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="divider">Or</div>
+
+    <!-- Right Form -->
+    <form class="tracking-form">
+      <div class="form-group">
+        <label for="trackingNumber">Tracking Number</label>
+        <input type="text" id="trackingNumber" placeholder="Enter tracking number" />
+      </div>
+
+      <button type="submit" class="btn-black">TRACK</button>
+    </form>
   </div>
 </div>
-
-<!-- GOLD SECTION -->
-
-  <div class="gold-section">
-    <div class="gold-left">
-      <h5>OLD IS GOLD ✨</h5>
-      <h1>It all started at the <span class="root">roots</span></h1>
-      <p >We retain traditional Eastern techniques in the production of all our products and encourage ancient beauty and wellbeing practices, proven through a thousand lifetimes.</p>
-    </div>
-    <div class="gold-right">
-      <img src="images/second-image.png" alt="About Us Cover Image">
-    </div>
-  </div>
-
-  <!-- unloacking section -->
-  <div class="unlocking-section bg-black  text-white">
-    <div class="gold-left">
-      <h5>Unlocking the secret 🔮</h5>
-      <h1>Nature Holds The Treasures</h1>
-      <p >We're proud to craft products made with 100% pure, natural and unadulterated ingredients. <br>
-      Our inspiration comes from time-tested traditions, where nature's wisdom has always been our greatest source of knowledge. <br>
-      Each product is a testament to the belief that the Earth provides everything we need for radiant, healthy skin and hair. Join us in embracing the natural beauty that's been cherished for centuries, and experience the transformative difference of our genuinely clean, nature-inspired offerings. Your body deserves nothing less.</p>
-    </div>
-    <div class="gold-right">
-        <img src="images/third-image.png" alt="About Us Cover Image">
-    </div>
-  </div>
-
+</div>
 
   <!-- Footer -->
 <footer class="footer">
@@ -145,7 +147,5 @@
     </div>
 </footer>
 
-</div>
-
 </body>
-</html>
+</html> 
