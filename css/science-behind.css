@@ -154,7 +154,7 @@ section{
 
 
 .card{
-  background: url("/images/learn-card.png");
+  background: url("/images/science1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,6 +164,20 @@ section{
   justify-content: end;
   align-items: start;
   color: white;
+  
+}
+.card2{
+  background: url("/images/science2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 450px;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  color: white;
+  flex-direction: column;
   
 }
 
