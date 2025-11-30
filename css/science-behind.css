@@ -9,6 +9,8 @@ body {
   margin: 0;
 }
 
+
+
 /* TOP BAR */
 .top-bar {
     background: #000;
@@ -18,10 +20,11 @@ body {
     font-size: 14px;
 }
 
+
 /* NAVBAR */
 
 /* Smooth hover background effect */
-/* Initial navbar (transparent) */
+
 header.navbar {
     position: relative;
     z-index: 10;
@@ -127,7 +130,6 @@ header.navbar:hover::before {
   color: #d3a257;
 }
 
-
 /* Hero Section */
 a h1{
   font-size: 4vw;
@@ -142,10 +144,12 @@ section{
 
 .card-section{
   height: 300px;
-  width: 450px;
   padding: 0;
   border-radius: 5px;
-  
+  display: flex;
+  gap: 18px;
+  justify-content: start;
+  align-items: center;
 }
 
 
