@@ -4,6 +4,11 @@ body {
     color: #222;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* TOP BAR */
 .top-bar {
     background: #000;
