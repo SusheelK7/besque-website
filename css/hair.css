@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: jost;
+  padding: 0;
+  margin: 0;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* NAVBAR */
+
+/* Smooth hover background effect */
+
+header.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+/* Sliding background layer */
+header.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ffffff;
+    z-index: -1;
+    transition: height 0.4s ease-in-out;
+}
+
+/* Hover: slide background down */
+header.navbar:hover::before {
+    height: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+}
+
+.nav-left a {
+    margin-right: 22px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.nav-center img {
+    height: 38px;
+}
+
+.nav-right i {
+    font-size: 18px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu box */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  z-index: 20;
+}
+
+/* Dropdown menu links */
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  display: block;
+  transition: 0.3s ease;
+  margin: 0;
+}
+
+.dropdown-menu a:hover {
+  background: #f5f5f5;
+  color: #d3a257; /* gold color */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Make SHOP look active when opened */
+.dropdown:hover > .dropbtn {
+  color: #d3a257;
+}
+
+/* HERO SECTION */
+.main-div {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-div h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.main-div p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* product */
+
+.uper-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:25px;
+}
+
+select, option{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.sidebar{
+  padding: 20px;
+  height: fit-content;
+}
+
+.right-side{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Product Card */
+
+/* .product-card:hover {
+  transform: translateY(-5px);
+} */
+
+/* Image Box (container of both images) */
+.img-box {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+
+/* First Image */
+.img-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  transition: all 0.5s ease;
+  
+}
+.img-box img{
+  border-radius: 10px;
+}
+
+/* Second Image */
+.img-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 100%;
+  transition: all 0.5s ease;
+}
+
+/* Hover Effect — Slide */
+.product-card:hover .img-main {
+  left: -100%;
+}
+
+.product-card:hover .img-hover {
+  left: 0;
+}
+
+/* Rating Stars */
+.rating i {
+  color: #000;
+  margin-right: 3px;
+}
+
+/* Cart Icon Overlay */
+.cart-icon {
+  position: absolute;
+  top: 62%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  background-color: white;
+  padding: 12px 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+/* Show icon ONLY when second image slides in */
+.product-card:hover .cart-icon {
+  opacity: 1;
+}
+
+/* footer */
+        /* Footer */
+
+.footer {
+  background: #f4ecd2;
+  padding: 60px 40px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    width: 260px;
+}
+
+/* Bottom Area */
+.footer-bottom {
+    text-align: center;
+}
+
+.currency {
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 26px;
+    margin: 0 10px;
+    color: #000;
+}
+
+.payments img {
+    height: 30px;
+    margin: 0 5px;
+    margin-top: 20px;
+}
+
+.copy {
+    margin-top: 15px;
+    font-size: 14px;
+}
